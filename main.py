@@ -9,4 +9,4 @@ async def root():
 
 @app.get("/funcaotest")
 async def root():
-    return {"teste": "Deu muito certo!"}
+    return {"teste": "Deu certo!"}
