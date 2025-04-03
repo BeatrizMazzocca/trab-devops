@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e178cb30-d215-4263-b72c-759a7c800f5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/continuosdelivery.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/continuosdelivery.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requerements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
