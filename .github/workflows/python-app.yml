@@ -1,4 +1,4 @@
-name: Run Python Tests
+name: Run Python Tests and CodeQL Analysis
 
 on:
   push:
@@ -27,3 +27,20 @@ jobs:
       - name: Run tests with pytest
         run: |
           pytest --maxfail=1 --disable-warnings --tb=short
+
+  analyze:
+    name: Analyze with CodeQL
+    runs-on: ubuntu-latest
+    needs: test  # Garante que os testes sejam executados antes da análise
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+
+      - name: Set up CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: python
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
