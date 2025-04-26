@@ -10,3 +10,4 @@ async def root():
 @app.get("/funcaotest")
 async def root():
     return {"teste": "Deu muito certo!"}
+    # teste de pr
