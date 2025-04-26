@@ -25,7 +25,13 @@ jobs:
     - name: Analysing the code with pylint
       run: |
         pylint $(git ls-files '*.py')
- 
+        
+name: Discord
+
+on:
+  - push
+
+jobs:
   discord:
     runs-on: ubuntu-latest
     steps:
