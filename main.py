@@ -10,4 +10,7 @@ async def hello_world():
 async def funcao_test():
     return {"teste": "Deu muito certo!"}
 
-    # teste de pr
+
+#novo teste
+  
+
