@@ -7,12 +7,16 @@ permissions:
   contents: read
 jobs: 
 
-discord:
+discord_test_message:
     runs-on: ubuntu-latest
+    name: Discord Commits
     steps:
-      - uses: actions/checkout@v4
+       -name: Checkout
+        uses: actions/checkout@v4
 
-      - name: Run Discord Webhook
-        uses: johnnyhuy/actions-discord-git-webhook@main
+       -name: Send message to discord   
+        uses: ./
         with:
-          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}   
+            webhook: ${{ secrets.DISCORD_WEBHOOK }}
+            template: "avatar-with-link"
+            include-extras: true   
